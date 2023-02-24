@@ -33,9 +33,6 @@ body {
   margin: 0;
   overflow-x: hidden;
   background-color: var(--app-bg-color);
-}
-
-.main {
   min-width: 12rem;
 }
 
