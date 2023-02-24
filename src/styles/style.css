@@ -18,8 +18,8 @@
 }
 
 html {
-  height: 600px;
-  width: 375px;
+  height: minmax(600px,100vh);
+  width: minmax(375px, 100%);
   margin: 0;
   padding: 0;
   border: 0;
