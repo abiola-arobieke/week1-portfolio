@@ -36,6 +36,10 @@ body {
   min-width: 12rem;
 }
 
+.main {
+  min-width: 12rem;
+}
+
 .text {
   font-family: Poppins, sans-serif;
 }
