@@ -8,12 +8,12 @@
 - [X] HTML setup
 - [X] Header section
 - [X] Headline section
+- [X] Test different browsers (error from previous attempt)
+- [X] RWD-CSS
+- [X] Adjust relative units to match Figma template
 
 ### Pending:
 
-- [ ] RWD-CSS
-- [ ] Adjust relative units to match Figma template
 - [ ] Projects section
 - [ ] About Me section
-- [ ] Test different browsers (error from previous attempt)
 - [ ] Contact Me form
