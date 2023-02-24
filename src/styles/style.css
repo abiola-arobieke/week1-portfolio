@@ -5,8 +5,7 @@
   --h3-color: #7f8cff;
   --cards-bg-color: #f7f7f9;
   --app-bg-color: #e5e5e5;
-  --h1-color:#172B4D;
-
+  --h1-color: #172b4d;
   --fw-bold: 700;
   --fw-regular: 400;
   --fw-semibold: 500;
@@ -120,7 +119,7 @@ body {
 
 .media__icons {
   padding-left: 0;
-  margin-top: -.30rem;
+  margin-top: -0.3rem;
   width: 6rem;
   height: 1.25rem;
   display: flex;
