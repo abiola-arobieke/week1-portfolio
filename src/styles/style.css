@@ -118,8 +118,8 @@ body {
   width: 10.63rem;
   height: 1.25rem;
   display: flex;
-  justify-content: flex-start;
+  justify-content: space-between;
   align-items: center;
-  gap: 0.9em;
+  gap: 1rem;
   list-style: none;
 }
