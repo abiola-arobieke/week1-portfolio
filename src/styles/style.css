@@ -1,0 +1,129 @@
+:root {
+  --h1-color: #172b4d;
+  --h2-color: #6070ff;
+  --p-color: #344563;
+  --h3-color: #7f8cff;
+  --cards-bg-color: #fff;
+  --app-bg-color: #e5e5e5;
+  --fw-bold: 700;
+  --fw-regular: 400;
+  --fw-semibold: 500;
+}
+
+/* CSS reset */
+*,
+*::before,
+*::after {
+  box-sizing: inherit;
+}
+
+html {
+  height: 100vh;
+  width: minmax(375px, 100%);
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 16px;
+  box-sizing: border-box;
+  scroll-behavior: smooth;
+}
+
+body {
+  font-family: 'Poppins', sans-serif;
+  margin: 0;
+  overflow-x: hidden;
+  background-color: var(--app-bg-color);
+  min-width: 12rem;
+}
+
+.main {
+  min-width: 12rem;
+}
+
+.text {
+  font-family: Poppins, sans-serif;
+}
+
+.header {
+  position: relative;
+  display: flex;
+  height: 15%;
+  justify-content: space-between;
+  align-items: center;
+  background-color: var(--cards-bg-color);
+}
+
+.header__wrapper {
+  display: block;
+  padding: 0.8rem 1rem;
+}
+
+.header__wrapper a {
+  text-decoration: none;
+  cursor: default;
+  color: var(--h2-color);
+  font-size: 1.13rem;
+  line-height: 1.25rem;
+}
+
+.btn--ham {
+  background: transparent;
+  border: none;
+}
+
+.headline {
+  position: relative;
+  height: 85%;
+  display: flex;
+  flex-direction: column;
+  margin: 0;
+  padding: 7.125rem 1.5rem;
+  justify-content: flex-start;
+  gap: clamp(0.6rem, 12px, 1.5rem);
+  background-color: var(--cards-bg-color);
+  background-image: url("./../../assets/img/header-shapes\ mobile.svg");
+  background-position: center;
+  background-blend-mode: multiply;
+  background-repeat: no-repeat;
+  background-clip: padding-box;
+  border-radius: 0 0 0 60px;
+}
+
+.headline__tittle {
+  max-width: 15ch;
+  font-weight: var(--fw-bold);
+  font-size: clamp(2rem, 2.5rem, 3rem);
+  color: var(--h1-color);
+  line-height: 3.25rem;
+  margin-bottom: 0;
+}
+
+.headline__intro-text {
+  color: var(--p-color);
+  font-weight: var(--fw-regular);
+  font-size: clamp(0.8rem, 16px, 1.25rem);
+  line-height: 1.5rem;
+  max-width: 75ch;
+  min-width: 20ch;
+  margin: 0;
+}
+
+.headline__lets-connect {
+  text-decoration: none;
+  font-weight: var(--fw-semibold);
+  color: var(--h3-color);
+  font-size: 1rem;
+  line-height: 1.5rem;
+}
+
+.media__icons {
+  padding-left: 0;
+  margin-top: -0.3rem;
+  width: 6rem;
+  height: 1.25rem;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 1rem;
+  list-style: none;
+}
