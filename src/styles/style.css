@@ -1,9 +1,27 @@
 :root {
   --h1-color: #172b4d;
   --h2-color: #6070ff;
-  --p-color: #344563;
   --h3-color: #7f8cff;
+  --p-color: #344563;
+  --btn-default-border-color: #7F8CFF;
+  --btn-default-bcg-color: transparent;
+  --btn-default-color:#396DF2;
+  --btn-hover-border-color: transparent;
+  --btn-hover-bcg-color: #6070ff;
+  --btn-hover-color: #fff;
+  --btn-active-border-color: transparent;
+  --btn-active-bcg-color: #2230d2;
+  --btn-active-color: #fff;
+  --btn-disabled-border-color: #c1c7d0;
+  --btn-disabled-bcg-color: transparent;
+  --btn-disabled-color: #5E6C84;
   --cards-bg-color: #fff;
+  --cards-border-color: #DFE1E6;
+  --cards-h2-color:#344563;
+  --cards-h1-color: #172B4D;
+  --cards-li-color: #7A869A;
+  --cards-a-color: #6070FF;
+  --cards-a-bcg-color:#EBEBFF;
   --app-bg-color: #e5e5e5;
   --fw-bold: 700;
   --fw-regular: 400;
@@ -18,7 +36,6 @@
 }
 
 html {
-  height: 100vh;
   width: minmax(375px, 100%);
   margin: 0;
   padding: 0;
@@ -36,7 +53,7 @@ body {
   min-width: 12rem;
 }
 
-.main {
+header {
   min-width: 12rem;
 }
 
@@ -126,4 +143,137 @@ body {
   align-items: center;
   gap: 1rem;
   list-style: none;
+}
+
+/* BUTTONS SETUP */
+/* Button / Enable */
+button {
+  padding: 12px;
+  background-color: transparent;
+  border: 1px solid var(--btn-default-border-color);
+  border-radius: 8px;
+
+  /* Text inside */
+  font-weight: var(--fw-semibold);
+  font-size: clamp(.8rem, 1.0625rem,1.4rem);
+  line-height: 1.5rem;
+  text-align: center;
+  letter-spacing: 0.03em;
+  color: var(--btn-default-color)
+}
+
+button:hover {
+  border-color: var(--btn-hover-border-color);
+  background-color: var(--btn-hover-bcg-color);
+  color: var(--btn-hover-color);
+  box-shadow: 0px 8px 16px rgba(64, 83, 252, 0.24);
+}
+
+button:disabled {
+  background-color: var(--btn-disabled-bcg-color);
+  color: var(--btn-disabled-color);
+  border: 1px solid var(--btn-disabled-border-color);
+}
+
+button:active {
+  border-color: var(--btn-active-border-color);
+  background-color: var(--btn-active-bcg-color);
+  color: var(--btn-active-color)
+}
+
+/* WORK SECTION */
+.projects {
+  padding: 7.125rem 1.5rem;
+  display: grid;
+  grid-template-rows: repeat(4, minmax(3.5rem, 1fr));
+  gap: 5.5rem;
+  overflow-x: hidden;
+}
+
+.projects__project {
+  background-color: var(--cards-bg-color);
+  border: solid 1px var(--cards-border-color);
+  border-radius: 16px;
+  padding: 1rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: flex-start;
+  gap: clamp(0.6rem, 0.75rem, 1.5rem);
+}
+
+.projects__project img {
+  margin-bottom: 0;
+  padding-bottom: 0;
+  object-position: center;
+  object-fit: cover;
+  width: 100%;
+}
+
+.canopy {
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-start;
+  align-items: center;
+  padding: 0;
+  gap: .7rem;
+  width: minmax(12.5rem,75%);
+  height: 1.8rem;
+  order:1;
+}
+
+.canopy h2 {
+  color: var(--cards-h1-color);
+}
+
+.canopy ul {
+  padding-left: .8em;
+  list-style: url(./../../assets/img/li_dot.svg) outside;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 1.8rem;
+  color: var(--cards-li-color);
+  font-style: normal;
+  font-weight: 600;
+  font-size: minmax(0.8125rem, 1rem);
+  line-height: 1rem;
+}
+
+.canopy li {
+  width: calc(50%-1.8rem);
+  white-space: nowrap;
+}
+
+.button__wrapper {
+  order:2;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  padding: 0;
+  gap: .5rem;
+  width: clamp(0.76rem, 13.6875rem, 15rem);
+  height: 1.5rem;
+}
+
+.project__summary {
+  max-width: 75ch;
+}
+
+.button__wrapper a {
+  border-color: transparent;
+  background:var(--cards-a-bcg-color);
+  border-radius: 8px;
+  padding: 4px 12px;
+  width: minmax(1.8125rem,auto);
+  height: 1.5rem;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  text-decoration: none;
+  font-style: normal;
+  font-size: clamp(.5rem,.75rem,1.3rem);
+  line-height: 1rem;
+  letter-spacing: 0.03em;
+  color: var(--cards-a-color);
 }
