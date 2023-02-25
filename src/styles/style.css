@@ -23,6 +23,8 @@
   --cards-a-color: #6070FF;
   --cards-a-bcg-color:#EBEBFF;
   --app-bg-color: #e5e5e5;
+  --skills-bcg-color: #F7F7F9;
+  --skills-color: #253858;
   --fw-bold: 700;
   --fw-regular: 400;
   --fw-semibold: 500;
@@ -293,6 +295,7 @@ button:active {
 
 /* ABOUT ME */
 .about-me-section {
+  border-radius: 0 85 0 0;
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -302,13 +305,14 @@ button:active {
   background-color: var(--cards-bg-color);
 }
 
+/* Bio */
 .knowledge {
   display: flex;
   flex-direction: column;
   align-items: flex-start;
   padding: 0p;
   gap: 0.75rem;
-  border: solid 1px red;
+  width: 100%;
 }
 
 .knowledge h2 {
@@ -341,4 +345,71 @@ button:active {
 
 .knowledge li {
   padding: .25rem;
+}
+
+/* Tech Stack and Skills */
+.about-me {
+  width: 100%;
+  padding: 0px;
+}
+
+.about-me>ul {
+  width: auto;
+  margin-left: 0;
+  padding-left: .5rem;
+  list-style: none;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  font-weight: var(--fw-semibold);
+  font-size: clamp(.9rem,1.25rem,1.5rem);
+  line-height: 1.5rem;
+
+}
+
+.category {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  height: 4.5rem;
+}
+
+.category button{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 40px;
+  height: 40px;
+  border-radius: 8px;
+  background: none;
+  border: none;
+  cursor: pointer;
+  position: relative;
+}
+
+.sub-category {
+  list-style: none;
+  display: flex;
+  flex-direction: column;
+  gap: 0.75rem;
+}
+
+#js,
+#html,
+#css {
+  position: relative;
+  top:-1.875rem;
+  left: -2.5rem;
+  margin-left:0;
+  width: 196%;
+  display: flex;
+  padding: 0.75rem;
+  background: var(--skills-bcg-color);
+  border-radius: 8px;
+  align-items: center;
+  gap: 1rem;
+  font-weight: var(--fw-semibold);
+  line-height: 1.25rem;
+  font-size: clamp(.75rem, 0.9375rem, 1.2rem);
+  color: var(--skills-color)
 }
