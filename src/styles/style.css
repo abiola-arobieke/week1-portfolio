@@ -148,7 +148,10 @@ header {
 /* BUTTONS SETUP */
 /* Button / Enable */
 button {
-  padding: 12px;
+  display: flex;
+  flex-direction: row;
+  gap:0.625rem;
+  padding: .75rem;
   background-color: transparent;
   border: 1px solid var(--btn-default-border-color);
   border-radius: 8px;
@@ -290,5 +293,52 @@ button:active {
 
 /* ABOUT ME */
 .about-me-section {
-  
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 7.125rem 1.5rem;
+  gap: 1.5rem;
+  height: clamp(60.5rem,70.321875rem, 80rem);
+  background-color: var(--cards-bg-color);
+}
+
+.knowledge {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  padding: 0p;
+  gap: 0.75rem;
+  border: solid 1px red;
+}
+
+.knowledge h2 {
+  color: var(--cards-h1-color);
+  font-style: normal;
+  font-weight: var(--fw-bold);
+  font-size: clamp(1.5rem,2.5rem,3.5rem);
+  line-height: 3.25rem;
+  max-width: 6ch;
+  margin-bottom: 0;
+  padding-bottom: 0;
+}
+
+.knowledge p {
+  max-width: 75ch;
+  margin-top: 0;
+  padding-top: 0;
+  font-style: normal;
+  font-weight: var(--fw-regular);
+  font-size: 1rem;
+  line-height: 1.5rem;
+  color: var(--cards-h2-color);
+}
+
+.knowledge .media__icons {
+  padding: .5rem;
+  margin-top: 0;
+  gap:.8rem;
+}
+
+.knowledge li {
+  padding: .25rem;
 }
