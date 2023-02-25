@@ -260,7 +260,17 @@ button:active {
   max-width: 75ch;
 }
 
-.button__wrapper a {
+.tech__wrapper {
+  list-style-type: none;
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+  padding-left: 0;
+  margin-left: 0;
+  gap: clamp(.35rem, .5rem, .8rem);
+}
+
+.tech__wrapper a{
   border-color: transparent;
   background:var(--cards-a-bcg-color);
   border-radius: 8px;
