@@ -11,9 +11,8 @@
 - [X] Test different browsers (error from previous attempt)
 - [X] RWD-CSS
 - [X] Adjust relative units to match Figma template
+- [X] Projects section
+- [X] About Me section
 
 ### Pending:
-
-- [ ] Projects section
-- [ ] About Me section
 - [ ] Contact Me form
