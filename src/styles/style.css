@@ -238,11 +238,11 @@ button:active {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  gap: 1.8rem;
+  gap: 2.8rem;
   color: var(--cards-li-color);
   font-style: normal;
   font-weight: 600;
-  font-size: minmax(0.8125rem, 1rem);
+  font-size: clamp(0.5rem, 0.8125rem, 1rem);
   line-height: 1rem;
 }
 
