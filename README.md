@@ -64,7 +64,7 @@ in job searching and skills showcasing.
 ## 🚀 Live Demo <a name="live-demo"></a>
 
 
-- [Live Demo Link](https://yourdeployedapplicationlink.com)
+- [Live Demo Link](https://juniorgarciarodriguez.github.io/Portfolio-live-demo/)
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
