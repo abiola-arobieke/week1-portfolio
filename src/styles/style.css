@@ -268,9 +268,9 @@ button:active {
 
 .tech__wrapper {
   list-style-type: none;
-  display: flex;
+  /* display: flex;
   align-items: center;
-  justify-content: flex-start;
+  justify-content: flex-start; */
   padding-left: 0;
   margin-left: 0;
   gap: clamp(0.35rem, 0.5rem, 0.8rem);
@@ -283,15 +283,17 @@ button:active {
   padding: 4px 12px;
   width: minmax(1.8125rem, auto);
   height: 1.5rem;
-  display: flex;
+  /* display: flex;
   flex-direction: row;
-  align-items: center;
+  align-items: center; */
   text-decoration: none;
   font-style: normal;
   font-size: clamp(0.5rem, 0.75rem, 1.3rem);
   line-height: 1rem;
   letter-spacing: 0.03em;
   color: var(--cards-a-color);
+  float: left;
+  margin-left: .5rem;
 }
 
 /* ABOUT ME */
