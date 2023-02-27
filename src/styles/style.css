@@ -292,6 +292,8 @@ button:active {
   line-height: 1rem;
   letter-spacing: 0.03em;
   color: var(--cards-a-color);
+
+  /* positioning with float DON'T MERGE*/
   float: left;
   margin-left: .5rem;
 }
