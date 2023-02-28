@@ -24,7 +24,7 @@
         <a href="#">My Logo</a>
       </h2></div>
       <div class="header__wrapper">
-        <nav class="toggleBtn"><button class="btn btn--ham" type="button"><img src="./assets/img/toggle menu.svg" alt="hamburger menu" class="ham--svg"></button></nav>
+        <nav class="toggleBtn"><button class="btn--ham" type="button"><img src="./assets/img/toggle menu.svg" alt="hamburger menu" class="ham--svg"></button></nav>
       </div></section>
 
 
@@ -69,7 +69,7 @@
               <li><a target="_blank" href="https://developer.mozilla.org/en-US/docs/Learn/JavaScript">javaScript</a></li>
             </ul>
         </div>
-        <button class="project__see-more">See Project</button>
+        <button class="project__see-more btn">See Project</button>
       </section>
       <section class="projects__project">
         <div><img src="./assets/img/Portfolio Snapshoot 2.svg" alt="Project preview" class="project-image"></div>
@@ -90,7 +90,7 @@
               <li><a target="_blank" href="https://developer.mozilla.org/en-US/docs/Learn/JavaScript">javaScript</a></li>
             </ul>
         </div>
-        <button class="project__see-more">See Project</button>
+        <button class="project__see-more btn">See Project</button>
       </section>
       <section class="projects__project">
         <div><img src="./assets/img/Portfolio Snapshoot 3.svg" alt="Project preview" class="project-image"></div>
@@ -111,7 +111,7 @@
               <li><a target="_blank" href="https://developer.mozilla.org/en-US/docs/Learn/JavaScript">javaScript</a></li>
             </ul>
       </div>
-        <button class="project__see-more">See Project</button>
+        <button class="project__see-more btn">See Project</button>
       </section>
       <section class="projects__project">
         <div><img src="./assets/img/Portfolio Snapshoot 4.svg" alt="Project preview" class="project-image"></div>
@@ -132,7 +132,7 @@
               <li><a target="_blank" href="https://developer.mozilla.org/en-US/docs/Learn/JavaScript">javaScript</a></li>
             </ul>
           </div>
-        <button class="project__see-more">See Project</button>
+        <button class="project__see-more btn ">See Project</button>
       </section>
     </main>
 
@@ -150,7 +150,7 @@
             <li><a target="_blank" href="https://twitter.com" class="media__icon"><img src="./assets/img/Twitter icon.svg" alt="twitter"></a></li>
             <li><a target="_blank" href="https://medium.com" class="media__icon"><img src="./assets/img/medium icon.svg" alt="medium"></a></li>
           </ul>
-        <button>Get my resume</button>
+        <button class="btn">Get my resume</button>
       </div>
       <div class="about-me">
         <ul>
@@ -180,15 +180,17 @@
 
     <!-- CONTACT ME -->
     <section class="contact-me">
-      <form action="https://formspree.io/f/xnqyvppn" method="POST">
-        <label for="email" >Your email: <input type="email" id="email" name="email" >
-        </label>
-        <label for="msg">Your message:
-        <textarea id="msg" name="message"></textarea>
-        </label>
+      <h1>Contact me</h1>
+      <p>If you have an application you are interested in developing, a feature that you need built or a project that needs coding. I'd love to help with it</p>
+      <form id="contact_form" class="contact-me__form" action="https://formspree.io/f/xnqyvppn" method="POST">
+        <label for="name" ><input form="contact_form" placeholder="Type your name" type="text" id="name" name="name" maxlength="30" required="true"></label>
+        <label for="email" ><input form="contact_form" placeholder="Type your email" type="email" id="email" name="email" required="true"></label>
+        <label for="msg"><textarea id="msg" name="message" placeholder="Write your message here" maxlength="500" required="true"></textarea></label>
         <!-- your other form fields go here -->
-        <button type="submit">Send</button>
+        <button class="btn btn--submit" type="submit">Get in Touch</button>
       </form>
     </section>
+    <footer class="footer">
+    </footer>
 </body>
 </html>
