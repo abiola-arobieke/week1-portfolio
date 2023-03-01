@@ -298,6 +298,7 @@ header {
 /* ABOUT ME */
 .about-me-section {
   position: relative;
+  height: 110vh;
   border-radius: 0 85px 0 0;
   display: flex;
   flex-direction: column;
@@ -418,28 +419,23 @@ header {
 
 /* CONTACT FORM */
 .contact-me {
+  position:absolute;
+  height: 67vh;
+  bottom: -398vh;
   background-color: var(--h2-color);
-}
-
-
-.contact-me__wrapper {
-  position: relative;
-  height: 100%;
-  width: 100%;
-  display: flex;
-  flex-direction: column;
-  margin: 0;
-  padding: 7.125rem 1.5rem;
-  justify-content: center;
-  align-items: center;
-  gap: clamp(0.6rem, 12px, 1.5rem);
-  background-color: var(--h2-color);
+  border-radius: 65px 0 0 0;
   background-image: url("./../../assets/img/contact\ form\ shapes-mobile.svg");
   background-position: center right;
   background-blend-mode: normal;
   background-repeat: no-repeat;
-  border-radius: 65px 0 0 0;
-  top: -3rem;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  padding: 7.125rem 1.5rem;
+  justify-content: center;
+  align-items: center;
+  gap: clamp(0.6rem, 12px, 1.5rem);
+  z-index: 1;
 }
 
 .contact-me h1 {
@@ -508,7 +504,3 @@ header {
   padding: 0.75rem 1rem;
 }
 
-footer {
-  height: auto;
-  background-color: var(--h2-color);
-}
