@@ -19,6 +19,7 @@
   - [Run tests](#run-tests)
   - [Deployment](#triangular_flag_on_post-deployment)
 - [👥 Authors](#authors)
+  - [👥 Collaborators](#collabs)
 - [🔭 Future Features](#future-features)
 - [🤝 Contributing](#contributing)
 - [⭐️ Show your support](#support)
@@ -97,6 +98,9 @@ You can deploy this project using a web-hosting platform of your choice. In this
 - Twitter: [@JuniorGarcia](https://twitter.com/JGarciaGez)
 - LinkedIn: [@JuniorGarcia](https://linkedin.com/in/junior-g-078143191)
 
+## 👥 Collaboration <a name="collabs"></a>
+👥 **Abiola Arobieke**
+
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
 
@@ -131,10 +135,8 @@ If you like this project feel free to use it as you please within the scope of _
 ## 🙏 Acknowledgments <a name="acknowledgements"></a>
 
 I would like to thanks:
-- Microverse and its amazing community for the opportunity and support
-- **_[Vyacheslav Plekhanov](https://www.linkedin.com/in/vyacheslav-plekhanov/)_** for mentoring, support and motivation in the project development
-- My morning session team for moral support and motivation when I wanted to give up
-- My coding partners
+- **_[Vyacheslav Plekhanov](https://www.linkedin.com/in/vyacheslav-plekhanov/)_** for mentoring, support and motivation
+
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
 ## ❓ FAQ (OPTIONAL) <a name="faq"></a>
