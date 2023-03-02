@@ -167,7 +167,7 @@ header {
   text-align: center;
   letter-spacing: 0.03em;
   color: var(--btn-default-color);
-  transition: .25s ease-in-out;
+  transition: 0.25s ease-in-out;
 }
 
 .btn:hover {
@@ -175,7 +175,7 @@ header {
   background-color: var(--btn-hover-bcg-color);
   color: var(--btn-hover-color);
   box-shadow: 0 8px 16px rgba(64, 83, 252, 0.24);
-  transition: .25s ease-in-out;
+  transition: 0.25s ease-in-out;
 }
 
 .btn:disabled {
@@ -188,7 +188,7 @@ header {
   border-color: var(--btn-active-border-color);
   background-color: var(--btn-active-bcg-color);
   color: var(--btn-active-color);
-  transition: .15s ease-in;
+  transition: 0.15s ease-in;
 }
 
 /* WORK SECTION */
@@ -430,7 +430,7 @@ header {
   width: 100%;
   display: flex;
   flex-direction: column;
-  padding: 7.125rem 1.5rem 0rem;
+  padding: 7.125rem 1.5rem 0;
   justify-content: center;
   align-items: center;
   gap: clamp(0.6rem, 12px, 1.5rem);
