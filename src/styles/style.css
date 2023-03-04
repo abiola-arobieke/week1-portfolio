@@ -25,7 +25,6 @@
 }
 
 html {
-  width: minmax(375px, 100%);
   margin: 0;
   padding: 0;
   border: 0;
@@ -130,7 +129,6 @@ header {
   gap: clamp(0.6rem, 12px, 1.5rem);
   background: url("./../../assets/img/mb_header-shapes.svg") no-repeat;
   background-position: center;
-  background-size: 120% auto;
 }
 
 .headline__tittle {
@@ -182,7 +180,7 @@ header {
   overflow-x: hidden;
 }
 
-.projects__project {
+.project {
   background-color: var(--clr-neutral-n0);
   border: solid 1px var(--clr-neutral-n40);
   border-radius: 16px;
@@ -342,6 +340,7 @@ header {
 .about-me {
   width: 100%;
   padding: 0;
+  color: var(--clr-neutral-n600);
 }
 
 .about-me > ul {
@@ -508,6 +507,10 @@ footer {
 
 /* DESKTOP */
 @media (min-width:420px) {
+  body {
+    min-width: 375px;
+  }
+
   .desktop {
     display: block;
   }
@@ -527,16 +530,103 @@ footer {
 
   .desktop__menu a {
     color: var(--clr-neutral-n600);
+    cursor: pointer;
   }
 
+  /* HEADER */
   .headline {
-    margin: .5rem 20%;
-    padding: 20% .5rem;
-    background-image: url("./../../assets/img/dk_Header_bg.svg");
-    background-position: top 150px right 5%;
+    padding: 3% 21%;
+    background: url("./../../assets/img/dk_Header_bg.svg") no-repeat;
+    background-position: top 2em right 0.1em;
     background-size: 100% auto;
+  }
+
+  .headline__tittle {
+    max-width: 20ch;
+  }
+
+  .headline__intro-text {
+    max-width: 75ch;
+  }
+
+  /* PROJECTS */
+  .projects {
+    padding: 7.125rem 1.5rem;
+    grid-auto-flow: dense;
+  }
+
+  .projects .project:nth-child(2),
+  .projects .project:nth-child(4) {
+    display: flex;
+    flex-direction: row-reverse;
+  }
+
+  .project {
+    display: flex;
+    gap: clamp(0.6rem, 0.75rem + 10vw, 1.5rem);
+    padding-left: 1rem;
+    max-width: 65.625rem;
+  }
+
+  .cover {
+    max-width: 500px;
+  }
+
+  /* ABOUT */
+  .about-me-section {
+    display: grid;
+    grid-template-columns: 1fr 1.5fr;
+    gap: 1.5625rem;
+  }
+
+  .sub-category {
+    display: flex;
+    flex-direction: row;
+  }
+
+  .sub-category li {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+  }
+
+  #js,
+  #html,
+  #css {
+    align-items: baseline;
+  }
+
+  /* CONTACT FORM */
+  .contact-me {
+    margin-top: -3rem;
+    background-color: var(--clr-primary-b400);
+    border-radius: 65px 0 0 0;
+    background-image: url("./../../assets/img/dk_contact\ form\ background\ shapes.svg");
+    background-size: 101% auto;
+    background-position: center;
     background-blend-mode: normal;
     background-repeat: no-repeat;
-    background-clip: padding-box;
+    width: max(300px, 100%);
+    height: auto;
+    padding: 20%+25vw;
+  }
+
+  .contact-me h1 {
+    margin-bottom: 0;
+  }
+
+  #email,
+  #msg,
+  #name {
+    border-radius: 2px;
+  }
+}
+
+@media screen and (min-width:768px){
+  .headline {
+    margin: -1em 1em;
+    padding: 20%+25vw;
+    width: 100%;
+    height: auto;
   }
 }
