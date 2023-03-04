@@ -128,7 +128,7 @@ header {
   padding: 7.125rem 1.5rem;
   justify-content: flex-start;
   gap: clamp(0.6rem, 12px, 1.5rem);
-  background: url("./../../assets/img/header-shapes\ mobile.svg") no-repeat;
+  background: url("./../../assets/img/mb_header-shapes.svg") no-repeat;
   background-position: center;
   background-size: 120% auto;
 }
@@ -225,12 +225,12 @@ header {
 
 .canopy ul {
   padding-left: 0.8em;
-  list-style: url(./../../assets/img/li_dot.svg) outside;
+  list-style: url(./../../assets/img/mb_li_dot.svg) outside;
   display: flex;
   justify-content: space-between;
   align-items: center;
   gap: 2.8rem;
-  color: var(--cards-li-color);
+  color: var(--clr-neutral-n100);
   font-weight: 600;
   font-size: clamp(0.5rem, 0.8125rem, 1rem);
   line-height: 1rem;
@@ -254,6 +254,10 @@ header {
 
 .project__summary {
   max-width: 75ch;
+  font-weight: 400;
+  font-size: 0.9375rem;
+  line-height: 1.5rem;
+  color: var(--clr-neutral-n600);
 }
 
 .tech__wrapper {
@@ -406,7 +410,7 @@ header {
   margin-top: -3rem;
   background-color: var(--clr-primary-b400);
   border-radius: 65px 0 0 0;
-  background-image: url("./../../assets/img/contact\ form\ shapes-mobile.svg");
+  background-image: url("./../../assets/img/mb_contact\ form\ shapes-mobile.svg");
   background-position: 105% 102%;
   background-blend-mode: normal;
   background-repeat: no-repeat;
@@ -496,14 +500,14 @@ footer {
   width: 100%;
   padding: 1rem 0.75rem;
   background-color: var(--clr-primary-b400);
-  background-image: url(./../../assets/img/Light.svg);
+  background-image: url(./../../assets/img/mb_home-indicator.png);
   background-size: cover;
   background-repeat: no-repeat;
   background-position: center center;
 }
 
 /* DESKTOP */
-@media (min-width:768px) {
+@media (min-width:420px) {
   .desktop {
     display: block;
   }
@@ -516,9 +520,23 @@ footer {
     display: flex;
     list-style-type: none;
     gap: 1em;
-    color: var(--clr-neutral-n600);
     font-weight: 500;
     font-size: 0.9375rem;
     line-height: 1.25rem;
+  }
+
+  .desktop__menu a {
+    color: var(--clr-neutral-n600);
+  }
+
+  .headline {
+    margin: .5rem 20%;
+    padding: 20% .5rem;
+    background-image: url("./../../assets/img/dk_Header_bg.svg");
+    background-position: top 150px right 5%;
+    background-size: 100% auto;
+    background-blend-mode: normal;
+    background-repeat: no-repeat;
+    background-clip: padding-box;
   }
 }
