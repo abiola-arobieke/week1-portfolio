@@ -13,7 +13,7 @@
 - [X] Projects section
 - [X] About Me section
 - [X] Contact Me form
+- [X] Media queries for the desktop version
 
 ### Pending:
-- [ ] Media queries for the desktop version
 - [ ] Animations
